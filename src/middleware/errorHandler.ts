@@ -8,7 +8,7 @@ export class Err {
 	constructor(
 		msg: string = 'An unkown error occured',
 		httpStatus: number = 400,
-		more: any = {},
+		more: any = {}
 	) {
 		this.msg = msg;
 		this.httpStatus = httpStatus;
@@ -20,7 +20,7 @@ export const customErrorHandler: ErrorRequestHandler = async (
 	err,
 	req,
 	res,
-	next,
+	next
 ) => {
 	let errorMsg =
 		'An unknown error occurred. Please contact support if this issue persists.';

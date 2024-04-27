@@ -15,8 +15,8 @@ const setupMiddlewaresAndRoutes = (server: Express) => {
 	server.use(
 		cors({
 			origin: corsOrigins,
-			credentials: true,
-		}),
+			credentials: true
+		})
 	);
 	server.use(api);
 	server.use(customErrorHandler);

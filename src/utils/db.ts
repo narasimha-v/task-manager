@@ -6,7 +6,7 @@ export const connectDB = async () => {
 		console.log('Connecting to MongoDB...');
 		const res = await mongoose.connect(MONGO_URI, {
 			retryWrites: true,
-			w: 'majority',
+			w: 'majority'
 		});
 
 		console.log(`MongoDB connected: ${res.connection.host}`);
