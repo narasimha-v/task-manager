@@ -8,8 +8,8 @@ Task manager api's built using typescript, node, express & mongo
 
 ## Features
 
--   Custom error handling &
--
+-   Custom error handling
+-   Authentication implemented using passport
 -   Clean structure seperating out routes & services
 
 ## Environment Variables
