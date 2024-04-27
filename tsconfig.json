@@ -15,8 +15,7 @@
 		"sourceMap": true,
 		"strict": true,
 		"target": "es6",
-		"typeRoots": ["./src/types", "node_modules/@types"],
-		"types": ["mocha"]
+		"typeRoots": ["./src/types", "node_modules/@types"]
 	},
 	"exclude": ["node_modules"],
 	"include": ["src/**/*"]
