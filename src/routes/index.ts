@@ -2,6 +2,7 @@ import { Request, Response, Router } from 'express';
 import { notFound } from '../middleware';
 import { getIPAddress } from '../utils';
 import { authRouter } from './authRoute';
+import { taskRouter } from './taskRoute';
 
 const router = Router();
 
@@ -11,6 +12,7 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.use('/auth', authRouter);
+router.use('/tasks', taskRouter);
 router.use(notFound);
 
 export { router as api };

@@ -15,7 +15,7 @@ export const signUp = async (
 	]);
 
 	if (existingUser) {
-		throw new Err('User already exists');
+		throw new Err('User already exists', 400);
 	}
 
 	const user = new User({

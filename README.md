@@ -54,6 +54,60 @@ To run tests, run the following command
 yarn run test
 ```
 
+## API Reference
+
+#### Get all tasks
+
+```http
+  GET /tasks
+```
+
+#### Get task by id
+
+```http
+  GET /tasks/${id}
+```
+
+#### Create task
+
+```http
+  POST /tasks
+```
+
+| Parameter | Type | Description |
+
+| :-------- | :------- | :---------- |
+
+| `name` | `string` | **Required** |
+
+| `description` | `string` | **Required** |
+
+#### Update task
+
+```http
+  PUT /tasks/${id}
+```
+
+| Parameter | Type |
+
+| :-------- | :------- |
+
+| `name` | `string` |
+
+| `description` | `string` |
+
+| `status` | `Todo | In Progress | Done` |
+
+#### Delete task
+
+```http
+  DELETE /tasks/${id}
+```
+
+## Production URL
+
+[Task manager api]()
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
