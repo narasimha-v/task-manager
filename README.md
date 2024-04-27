@@ -72,31 +72,24 @@ yarn run test
 
 ```http
   POST /tasks
+
+  | Body | Type     | Description |
+  | :-------- | :------- | :---------- |
+  | `name`    | `string` | **Required** |
+  | `description` | `string` | **Required** |
 ```
-
-| Parameter | Type | Description |
-
-| :-------- | :------- | :---------- |
-
-| `name` | `string` | **Required** |
-
-| `description` | `string` | **Required** |
 
 #### Update task
 
 ```http
   PUT /tasks/${id}
+
+  | Body | Type     |
+  | :-------- | :------- |
+  | `name`    | `string` |
+  | `description` | `string` |
+  | `status` | `Todo | In Progress | Done` |
 ```
-
-| Parameter | Type |
-
-| :-------- | :------- |
-
-| `name` | `string` |
-
-| `description` | `string` |
-
-| `status` | `Todo | In Progress | Done` |
 
 #### Delete task
 
