@@ -8,8 +8,8 @@ Task manager api's built using typescript, node, express & mongo
 
 ## Features
 
--   Custom error handling
--   Authentication implemented using passport
+-   Custom error handling &
+-
 -   Clean structure seperating out routes & services
 
 ## Environment Variables
@@ -72,24 +72,24 @@ yarn run test
 
 ```http
   POST /tasks
-
-  | Body | Type     | Description |
-  | :-------- | :------- | :---------- |
-  | `name`    | `string` | **Required** |
-  | `description` | `string` | **Required** |
 ```
+
+| Parameter     | Type     | Description  |
+| :------------ | :------- | :----------- |
+| `name`        | `string` | **Required** |
+| `description` | `string` | **Required** |
 
 #### Update task
 
 ```http
   PUT /tasks/${id}
-
-  | Body | Type     |
-  | :-------- | :------- |
-  | `name`    | `string` |
-  | `description` | `string` |
-  | `status` | `Todo | In Progress | Done` |
 ```
+
+| Parameter     | Type          |
+| :------------ | :------------ |
+| `name`        | `string`      |
+| `description` | `string`      |
+| `status`      | `TASK_STATUS` |
 
 #### Delete task
 
