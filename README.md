@@ -91,6 +91,8 @@ yarn run test
 | `description` | `string`      |
 | `status`      | `TASK_STATUS` |
 
+TASK_STATUS: `['TODO', 'IN_PROGRESS', 'COMPLETED']`
+
 #### Delete task
 
 ```http
@@ -99,7 +101,7 @@ yarn run test
 
 ## Production URL
 
-[Task manager api]()
+[Task manager api](https://task-manager-qj1g.onrender.com)
 
 ## License
 
