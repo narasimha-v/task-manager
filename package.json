@@ -4,7 +4,7 @@
 	"main": "app.js",
 	"license": "MIT",
 	"scripts": {
-		"build": "tsc -p .",
+		"build": "yarn && tsc --project ./",
 		"dev": "nodemon src/app.ts",
 		"format": "prettier --write \"src/**/*.{ts,json}\"",
 		"lint": "eslint src/**/*.ts",
