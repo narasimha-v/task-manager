@@ -14,7 +14,7 @@ export const connectDB = async () => {
 			await mongoose.connection.close();
 		});
 
-		res.connection.getClient();
+		return res.connection.getClient();
 	} catch (error: any) {
 		console.error(`Error:${error.message}`);
 		process.exit(1);

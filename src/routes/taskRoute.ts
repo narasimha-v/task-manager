@@ -47,14 +47,8 @@ router.post('/', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
 	try {
-		const { title, description, status } = req.body;
-		const task = await updateTask(
-			req.user._id,
-			req.params.id,
-			title,
-			description,
-			status
-		);
+		const { status } = req.body;
+		const task = await updateTask(req.user._id, req.params.id, status);
 		return res.status(200).json(task);
 	} catch (error) {
 		next(error);

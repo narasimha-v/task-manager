@@ -49,15 +49,11 @@ export const createTask = async (
 export const updateTask = async (
 	userId: string,
 	taskId: string,
-	title?: string,
-	description?: string,
-	status?: TaskStatus
+	status: TaskStatus
 ) => {
 	const task = await Task.findOneAndUpdate(
 		{ user: userId, _id: taskId },
 		{
-			title,
-			description,
 			status
 		},
 		{ new: true }

@@ -66,14 +66,10 @@ describe('Task', async () => {
 		const updatedTask = await updateTask(
 			user._id,
 			task._id,
-			'Task 1 Updated',
-			'Description 1 Updated',
 			TaskStatus.COMPLETED
 		);
 
 		expect(updatedTask).to.exist;
-		expect(updatedTask.title).to.equal('Task 1 Updated');
-		expect(updatedTask.description).to.equal('Description 1 Updated');
 		expect(updatedTask.status).to.equal(TaskStatus.COMPLETED);
 	});
 
