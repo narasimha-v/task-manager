@@ -103,6 +103,8 @@ yarn run test
 
 [Task manager api](https://task-manager-qj1g.onrender.com)
 
+- Please note: Since it's deployed on a free instance, there will be a cold start during first access of the api causing a 30-50 second delay.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
