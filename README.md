@@ -1,4 +1,4 @@
-# Backend Template
+# Task manager
 
 Task manager api's built using typescript, node, express & mongo
 
@@ -8,8 +8,8 @@ Task manager api's built using typescript, node, express & mongo
 
 ## Features
 
--   Custom error handling &
--
+-   Custom error handling
+-   Implemented authentication with passport
 -   Clean structure seperating out routes & services
 
 ## Environment Variables
