@@ -11,7 +11,8 @@ import {
 
 const router = Router();
 
-router.use(isAuthenticated);
+// Disable intentionally as the app is deployed on Render and eabling session based authentication will cause issues due ro the use of a free domain name. Disable this line if you are running the app locally.
+// router.use(isAuthenticated);
 
 router.get('/', async (req, res, next) => {
 	try {
