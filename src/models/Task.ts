@@ -48,8 +48,6 @@ const TaskSchema = new Schema<TaskDoc>(
 		toJSON: {
 			transform: (_, ret: Partial<TaskDoc>) => {
 				delete ret.__v;
-				delete ret.createdAt;
-				delete ret.updatedAt;
 			}
 		},
 		timestamps: true
